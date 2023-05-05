@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <audio id="impacto-audio" src="boing.mp3"></audio>
+    <title>Whac-A-Mole</title>
+    <link rel="stylesheet" type="text/css" href="Mole.css">
+</head>
+
+<body>
+    <div class="container">
+       
+       
+        <div class="game-info">
+            <select id="dificultad" onchange="cambiarDificultad()">
+              <option value="facil">Fácil</option>
+              <option value="media">Media</option>
+              <option value="dificil">Difícil</option>
+            </select>
+            <button class="start-button" onclick="startGame()">Iniciar juego</button>
+            <span id="puntos">Puntos: 0</span>
+            <span id="tiempo">Tiempo: 200</span>
+        </div>
+        <div id="juego">
+            <section class="ar">
+                <div class="imagen" id="imagen1" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen2" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen3" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <br>
+            <section class="ar">
+                <div class="imagen" id="imagen4" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen5" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen6" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <br>
+            <section class="ar">
+                <div class="imagen" id="imagen7" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen8" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+            </section>
+            <section class="ar">
+                <div class="imagen" id="imagen9" data-golpe="topoGolpe.jpg" onclick="golpeMole(this)"></div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="Mole.js"></script>
+</body>
+
+</html>

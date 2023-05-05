@@ -1,0 +1,159 @@
+.imagen {
+  margin-left: 400px;
+  margin-top: 100px;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+}
+
+.ar {  
+  text-align: center;
+  /* atenció amb inline-block */
+  display: inline-block;
+  width: 155px;
+  height: 155px;
+  border-radius: 30px;
+}
+/* Estilos generales */
+body {
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+
+.img-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.img-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.img-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+
+/* Estilos para el botón de inicio */
+.start-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.start-button:hover {
+  background-color: #c0392b;
+}
+
+/* Estilos para el contador de puntos y el temporizador */
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.game-info span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para el contenedor del juego */
+#juego {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+/* Estilos para los agujeros del juego */
+.imagen {
+  width: 100px;
+  height: 100px;
+  background-image: url('topo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Estilos para el topo */
+.imagen.active {
+  background-image: url('topoSi.jpg');
+}
+
+.imagen.golpeado {
+  background-image: url('topoGolpe.jpg');
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 150px; /* nuevo */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
